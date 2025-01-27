@@ -1,0 +1,227 @@
+body {
+  background-color: #dbecfa; /* Fondo  */
+  border: 1px solid  #070551;
+  color: #070551;           /* Texto para mejor contraste */
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+p {
+  font-size: 18px; /* Cambia el tamaño según lo desees */
+}
+
+h1 {
+  font-size: 10px; /* Cambia el tamaño según lo desees */
+}
+
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #070551;
+    color: rgb(255, 255, 255);
+  }
+  
+  header .logo a {
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+  }
+  
+  header .menu a {
+    margin: 0 15px;
+    cursor: pointer;
+    text-decoration: none;
+    color: hsl(0, 0%, 100%);
+    font-size: 25px;
+  }
+
+  .hover-text {
+    color: rgb(255, 255, 255); /* Color inicial del texto */
+    transition: color 0.3s ease; /* Transición suave */
+}
+
+.hover-text:hover {
+   color:#9dcc1f
+}
+   
+  
+  
+  .hero {
+    text-align: center;
+    padding: 50px 10px;
+    background: url('hero-background.jpg') no-repeat center center/cover;
+    color:  #070551;
+  }
+  
+  .hero h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+  
+  .hero .btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #070551;
+    color: rgb(224, 192, 192);
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 30px;
+  }
+  
+  .services, .gallery, .contact {
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .services h2, .gallery h2, .contact h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+  
+  .service-items {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .service-item {
+    width: 250px;
+    padding: 20px;
+    background-color: #dda0dd;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(242, 240, 240, 0.1);
+  }
+
+
+  .gallery-container {
+    width: 90%; /* Ancho del contenedor */
+    max-width: 1200px; /* Ancho máximo */
+    margin: 0 auto;
+    background-color: white;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(250, 247, 247, 0.1);
+    padding: 20px;
+}
+
+  @keyframes scroll {
+    0% {
+        transform: translateX(0); /* Posición inicial */
+    }
+    100% {
+        transform: translateX(-100%); /* Desplazamiento hacia la izquierda */
+    }
+}
+  .gallery-items img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+  }
+
+  .contact form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  .contact input, .contact textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid  #070551;
+    border-radius: 5px;
+  }
+  
+  .contact .btn {
+    padding: 10px;
+    background-color: #dda0dd;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 30px;
+    cursor: pointer;
+    text-decoration: none; /* Quita el subrayado del enlace */
+    display: inline-block; /* Permite el tamaño de botón */
+    text-align: center; /* Centra el texto dentro del botón */
+}
+
+.contact .btn:hover {
+    background-color: #9dcc1f; /* Color al pasar el ratón */
+}
+  
+  footer {
+    text-align: center;
+    padding: 5px 10px;
+    background-color: #070551;
+    color: white;
+  }
+
+footer h3 {
+    font-size: 1em;
+    margin-bottom: 10 px;
+    color: #ecf0f1; /* Color más claro para los títulos */
+}
+
+footer p {
+    font-size: 1em;
+    color: #bdc3c7; /* Color más suave para el texto */
+    margin: 5px 0;
+}
+
+/* Contenedor principal para los bloques de contacto y redes sociales */
+footer div {
+    margin-bottom: 3px ;
+}
+
+/* Estilo para las redes sociales */
+footer .social-media ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer .social-media li {
+    display: inline;
+    margin: 0 10px;
+}
+
+footer .social-media a {
+    text-decoration: none;
+    font-size: 1em;
+    color: #ecf0f1;
+    transition: color 0.3s ease;
+   
+}
+
+footer .social-media a:hover {
+    color: #b1ea2e; /* Color azul en hover */
+}
+
+
+/* Responsividad para dispositivos móviles */
+@media (max-width: 768px) {
+    footer {
+        padding: 30px 10px;
+    }
+
+    footer h3 {
+        font-size: 1em ;
+    }
+
+    footer .social-media ul {
+        text-align: center;
+    }
+
+    footer .social-media li {
+        display: block;
+        margin: 10px 0;
+    }
+}
